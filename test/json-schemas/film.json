@@ -1,0 +1,209 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://swapi.co/film.json#",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "title",
+    "episode_id",
+    "opening_crawl",
+    "director",
+    "producer",
+    "release_date",
+    "characters",
+    "planets",
+    "starships",
+    "vehicles",
+    "species",
+    "created",
+    "edited",
+    "url"
+  ],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "episode_id": {
+      "$id": "#/properties/episode_id",
+      "type": "integer",
+      "title": "The Episode_id Schema",
+      "default": 0,
+      "examples": [
+        4
+      ]
+    },
+    "opening_crawl": {
+      "$id": "#/properties/opening_crawl",
+      "type": "string",
+      "title": "The Opening_crawl Schema"
+    },
+    "director": {
+      "$id": "#/properties/director",
+      "type": "string",
+      "title": "The Director Schema",
+      "default": "",
+      "examples": [
+        "George Lucas"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "producer": {
+      "$id": "#/properties/producer",
+      "type": "string",
+      "title": "The Producer Schema",
+      "default": "",
+      "examples": [
+        "Gary Kurtz, Rick McCallum"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "release_date": {
+      "$id": "#/properties/release_date",
+      "type": "string",
+      "title": "The Release_date Schema",
+      "default": "",
+      "examples": [
+        "1977-05-25"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "characters": {
+      "$id": "#/properties/characters",
+      "type": "array",
+      "title": "The Characters Schema",
+      "items": {
+        "$id": "#/properties/characters/items",
+        "type": "string",
+        "title": "The Items Schema",
+        "default": "",
+        "examples": [
+          "https://swapi.co/api/people/1/",
+          "https://swapi.co/api/people/2/",
+          "https://swapi.co/api/people/3/",
+          "https://swapi.co/api/people/4/",
+          "https://swapi.co/api/people/5/",
+          "https://swapi.co/api/people/6/",
+          "https://swapi.co/api/people/7/",
+          "https://swapi.co/api/people/8/",
+          "https://swapi.co/api/people/9/",
+          "https://swapi.co/api/people/10/",
+          "https://swapi.co/api/people/12/",
+          "https://swapi.co/api/people/13/",
+          "https://swapi.co/api/people/14/",
+          "https://swapi.co/api/people/15/",
+          "https://swapi.co/api/people/16/",
+          "https://swapi.co/api/people/18/",
+          "https://swapi.co/api/people/19/",
+          "https://swapi.co/api/people/81/"
+        ],
+        "pattern": "^(.*)$"
+      }
+    },
+    "planets": {
+      "$id": "#/properties/planets",
+      "type": "array",
+      "title": "The Planets Schema",
+      "items": {
+        "$id": "#/properties/planets/items",
+        "type": "string",
+        "title": "The Items Schema",
+        "default": "",
+        "examples": [
+          "https://swapi.co/api/planets/2/",
+          "https://swapi.co/api/planets/3/",
+          "https://swapi.co/api/planets/1/"
+        ],
+        "pattern": "^(.*)$"
+      }
+    },
+    "starships": {
+      "$id": "#/properties/starships",
+      "type": "array",
+      "title": "The Starships Schema",
+      "items": {
+        "$id": "#/properties/starships/items",
+        "type": "string",
+        "title": "The Items Schema",
+        "default": "",
+        "examples": [
+          "https://swapi.co/api/starships/2/",
+          "https://swapi.co/api/starships/3/",
+          "https://swapi.co/api/starships/5/",
+          "https://swapi.co/api/starships/9/",
+          "https://swapi.co/api/starships/10/",
+          "https://swapi.co/api/starships/11/",
+          "https://swapi.co/api/starships/12/",
+          "https://swapi.co/api/starships/13/"
+        ],
+        "pattern": "^(.*)$"
+      }
+    },
+    "vehicles": {
+      "$id": "#/properties/vehicles",
+      "type": "array",
+      "title": "The Vehicles Schema",
+      "items": {
+        "$id": "#/properties/vehicles/items",
+        "type": "string",
+        "title": "The Items Schema",
+        "default": "",
+        "examples": [
+          "https://swapi.co/api/vehicles/4/",
+          "https://swapi.co/api/vehicles/6/",
+          "https://swapi.co/api/vehicles/7/",
+          "https://swapi.co/api/vehicles/8/"
+        ],
+        "pattern": "^(.*)$"
+      }
+    },
+    "species": {
+      "$id": "#/properties/species",
+      "type": "array",
+      "title": "The Species Schema",
+      "items": {
+        "$id": "#/properties/species/items",
+        "type": "string",
+        "title": "The Items Schema",
+        "default": "",
+        "examples": [
+          "https://swapi.co/api/species/5/",
+          "https://swapi.co/api/species/3/",
+          "https://swapi.co/api/species/2/",
+          "https://swapi.co/api/species/1/",
+          "https://swapi.co/api/species/4/"
+        ],
+        "pattern": "^(.*)$"
+      }
+    },
+    "created": {
+      "$id": "#/properties/created",
+      "type": "string",
+      "title": "The Created Schema",
+      "default": "",
+      "examples": [
+        "2014-12-10T14:23:31.880000Z"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "edited": {
+      "$id": "#/properties/edited",
+      "type": "string",
+      "title": "The Edited Schema",
+      "default": "",
+      "examples": [
+        "2015-04-11T09:46:52.774897Z"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "url": {
+      "$id": "#/properties/url",
+      "type": "string",
+      "title": "The Url Schema",
+      "default": "",
+      "examples": [
+        "https://swapi.co/api/films/1/"
+      ],
+      "pattern": "^(.*)$"
+    }
+  }
+}

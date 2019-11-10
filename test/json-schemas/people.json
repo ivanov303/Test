@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://swapi.co/schemas/people.json",
+  "description": "All people scheme",
+  "type": "object",
+  "properties": {
+    "count": {
+      "type": "integer"
+    },
+    "next": {
+      "type": "string"
+    },
+    "previous": {
+      "type": "null"
+    },
+    "results": {
+      "type": "array",
+      "items": {
+        "$ref": "/character.json"
+      }
+    }
+  },
+  "required": [ "count", "next", "previous", "results" ]
+}
